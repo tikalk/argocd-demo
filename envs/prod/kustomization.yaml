@@ -10,4 +10,4 @@ patchesStrategicMerge:
   - deployment.yaml
 images:
   - name: "arabkin/hello-cloudbuild"
-    newTag: "prod"
+    newTag: "v1.0.0"
