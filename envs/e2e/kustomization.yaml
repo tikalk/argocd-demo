@@ -1,7 +1,6 @@
-namePrefix: e2e-
+# namePrefix: e2e-
 commonLabels:
   variant: e2e
-  org: khealth
 commonAnnotations:
   note: Hello, I am e2e!
 namespace: "e2e-2345"

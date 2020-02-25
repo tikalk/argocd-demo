@@ -1,7 +1,6 @@
-namePrefix: staging-
+# namePrefix: staging-
 commonLabels:
   variant: staging
-  org: acmeCorporation
 commonAnnotations:
   note: Hello, I am staging!
 resources:

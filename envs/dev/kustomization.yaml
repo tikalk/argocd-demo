@@ -1,7 +1,6 @@
-namePrefix: dev-
+# namePrefix: dev-
 commonLabels:
   variant: dev
-  org: acmeCorporation
 commonAnnotations:
   note: Hello, I am dev!
 resources:
