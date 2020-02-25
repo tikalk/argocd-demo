@@ -11,4 +11,4 @@ patchesStrategicMerge:
   - deployment.yaml
 images:
   - name: "arabkin/hello-cloudbuild"
-    newTag: "25bd56b"
+    newTag: "stage"

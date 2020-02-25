@@ -11,8 +11,6 @@ resources:
 patchesStrategicMerge:
   - service.yaml
   - hpa.yaml
-  # - hpa_requests_stack.yaml
 images:
   - name: "arabkin/hello-cloudbuild"
-    # newTag: "cb7a9cf"
-    newTag: "25bd56b"
+    newTag: "dev"

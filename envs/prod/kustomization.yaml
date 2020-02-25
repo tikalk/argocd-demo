@@ -11,4 +11,4 @@ patchesStrategicMerge:
   - deployment.yaml
 images:
   - name: "arabkin/hello-cloudbuild"
-    newTag: "e7615a4"
+    newTag: "prod"
