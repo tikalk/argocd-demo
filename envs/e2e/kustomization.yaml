@@ -1,0 +1,16 @@
+namePrefix: e2e-
+commonLabels:
+  variant: e2e
+  org: khealth
+commonAnnotations:
+  note: Hello, I am e2e!
+namespace: "e2e-2345"
+resources:
+  # - git@github.com/khealth/test-env//base
+  - ../../base
+patchesStrategicMerge:
+  - service.yaml
+  - hpa.yaml
+images:
+  - name: "arabkin/hello-cloudbuild"
+    newTag: "25bd56b"

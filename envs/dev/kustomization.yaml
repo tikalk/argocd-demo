@@ -1,0 +1,18 @@
+namePrefix: dev-
+commonLabels:
+  variant: dev
+  org: acmeCorporation
+commonAnnotations:
+  note: Hello, I am dev!
+resources:
+  # - git@github.com/khealth/test-env//base
+  - ../../base
+  - ingress.yaml
+patchesStrategicMerge:
+  - service.yaml
+  - hpa.yaml
+  # - hpa_requests_stack.yaml
+images:
+  - name: "arabkin/hello-cloudbuild"
+    # newTag: "cb7a9cf"
+    newTag: "25bd56b"

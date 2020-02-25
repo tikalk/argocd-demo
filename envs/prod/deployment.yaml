@@ -1,0 +1,13 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-cloudbuild
+spec:
+  replicas: 2
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: hello-cloudbuild
+spec:
+  type: ClusterIP

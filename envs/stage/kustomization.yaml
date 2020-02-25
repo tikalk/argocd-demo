@@ -1,0 +1,14 @@
+namePrefix: staging-
+commonLabels:
+  variant: staging
+  org: acmeCorporation
+commonAnnotations:
+  note: Hello, I am staging!
+resources:
+  # - git@github.com/khealth/test-env//base
+  - ../../base
+patchesStrategicMerge:
+  - deployment.yaml
+images:
+  - name: "arabkin/hello-cloudbuild"
+    newTag: "25bd56b"

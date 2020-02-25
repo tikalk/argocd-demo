@@ -1,0 +1,14 @@
+namePrefix: production-
+commonLabels:
+  variant: production
+  org: acmeCorporation
+commonAnnotations:
+  note: Hello, I am production!
+resources:
+  # - git@github.com/khealth/test-env//base
+  - ../../base
+patchesStrategicMerge:
+  - deployment.yaml
+images:
+  - name: "arabkin/hello-cloudbuild"
+    newTag: "e7615a4"
