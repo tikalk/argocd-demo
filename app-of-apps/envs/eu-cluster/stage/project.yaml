@@ -1,0 +1,12 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: staging
+  namespace: argocd
+spec:
+  description: Europe Staging Environments
+  destinations:
+    - namespace: staging
+      server: https://34.73.77.97
+  sourceRepos:
+    - git@github.com:tikalk/argocd-demo.git

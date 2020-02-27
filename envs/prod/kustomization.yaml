@@ -7,7 +7,7 @@ resources:
   # - git@github.com/khealth/test-env//base
   - ../../base
 patchesStrategicMerge:
-  - deployment.yaml
+  - hpa.yaml
 images:
   - name: "arabkin/hello-cloudbuild"
     newTag: "v1.0.0"

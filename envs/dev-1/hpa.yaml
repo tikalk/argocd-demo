@@ -1,7 +1,7 @@
 apiVersion: autoscaling/v1
 kind: HorizontalPodAutoscaler
 metadata:
-  name: hello-cloudbuild-hpa
+  name: hello-cloudbuild
 spec:
   minReplicas: 4
   maxReplicas: 6

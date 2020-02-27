@@ -3,5 +3,4 @@ apiVersion: v1
 metadata:
   name: hello-cloudbuild
 spec:
-  # type: ClusterIP
-  type: NodePort
+  type: ClusterIP

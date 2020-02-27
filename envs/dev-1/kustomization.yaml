@@ -1,15 +1,14 @@
-# namePrefix: e2e-
+# namePrefix: dev-
 commonLabels:
-  variant: e2e
+  variant: dev
 commonAnnotations:
-  note: Hello, I am e2e!
-namespace: "e2e-2345"
+  note: Hello, I am dev!
 resources:
   # - git@github.com/khealth/test-env//base
   - ../../base
+  - ingress.yaml
 patchesStrategicMerge:
-  - service.yaml
   - hpa.yaml
 images:
   - name: "arabkin/hello-cloudbuild"
-    newTag: "25bd56b"
+    newTag: "v1.2.4"

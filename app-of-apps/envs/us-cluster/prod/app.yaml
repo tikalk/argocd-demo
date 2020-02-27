@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: prod
+  namespace: argocd
+spec:
+  project: prod
+  source:
+    repoURL: "git@github.com:tikalk/argocd-demo.git"
+    path: env/prod
+    targetRevision: master
+  destination:
+    server: "https://34.73.77.97"
+    namespace: prod
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

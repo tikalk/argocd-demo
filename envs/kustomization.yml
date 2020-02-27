@@ -1,5 +1,0 @@
-# Created for customization purpose only
-resources:
-  - ./dev
-  - ./stage
-  - ./prod

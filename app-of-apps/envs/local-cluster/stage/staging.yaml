@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: hello-stage
+  namespace: argocd
+spec:
+  project: stage
+  source:
+    repoURL: "git@github.com:khealth/infra.git"
+    path: .k8s/kustomize/env/staging
+    targetRevision: master
+  destination:
+    server: "https://34.73.77.97"
+    namespace: stage
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
