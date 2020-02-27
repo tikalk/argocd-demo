@@ -6,7 +6,7 @@ commonAnnotations:
 resources:
   # - git@github.com/khealth/test-env//base
   - ../../base
-  - ingress.yaml
+  # - ingress.yaml
 patchesStrategicMerge:
   - hpa.yaml
 images:
