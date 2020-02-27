@@ -1,4 +1,4 @@
-# namePrefix: dev-
+namePrefix: dev-2
 commonLabels:
   variant: dev
 commonAnnotations:
