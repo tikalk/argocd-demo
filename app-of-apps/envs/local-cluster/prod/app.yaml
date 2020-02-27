@@ -7,7 +7,7 @@ spec:
   project: prod
   source:
     repoURL: "git@github.com:khealth/infra.git"
-    path: env/prod
+    path: envs/prod
     targetRevision: master
   destination:
     server: "https://kubernetes.default.svc"

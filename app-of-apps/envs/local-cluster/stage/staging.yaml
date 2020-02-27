@@ -7,10 +7,10 @@ spec:
   project: stage
   source:
     repoURL: "git@github.com:khealth/infra.git"
-    path: .k8s/kustomize/env/staging
+    path: envs/stage
     targetRevision: master
   destination:
-    server: "https://34.73.77.97"
+    server: "https://kubernetes.default.svc"
     namespace: stage
   syncPolicy:
     automated:
