@@ -4,7 +4,7 @@ metadata:
   name: hello-stage
   namespace: argocd
 spec:
-  project: stage
+  project: clio
   source:
     repoURL: "git@github.com:tikalk/argocd-demo.git"
     path: envs/stage

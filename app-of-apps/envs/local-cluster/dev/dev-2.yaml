@@ -4,7 +4,7 @@ metadata:
   name: hello-dev-2
   namespace: argocd
 spec:
-  project: default
+  project: thalia
   source:
     repoURL: "git@github.com:tikalk/argocd-demo.git"
     path: envs/dev-2

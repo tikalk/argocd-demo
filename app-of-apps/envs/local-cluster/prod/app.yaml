@@ -4,7 +4,7 @@ metadata:
   name: hello-prod
   namespace: argocd
 spec:
-  project: prod
+  project: thalia
   source:
     repoURL: "git@github.com:tikalk/argocd-demo.git"
     path: envs/prod

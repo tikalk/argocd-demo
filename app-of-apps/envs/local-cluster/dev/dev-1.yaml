@@ -4,7 +4,7 @@ metadata:
   name: hello-dev-1
   namespace: argocd
 spec:
-  project: default
+  project: clio
   source:
     repoURL: "git@github.com:tikalk/argocd-demo.git"
     path: envs/dev-1
