@@ -6,7 +6,7 @@ metadata:
 spec:
   project: stage
   source:
-    repoURL: "git@github.com:khealth/infra.git"
+    repoURL: "git@github.com:tikalk/argocd-demo.git"
     path: envs/stage
     targetRevision: master
   destination:
