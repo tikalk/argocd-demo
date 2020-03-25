@@ -10,4 +10,4 @@ patchesStrategicMerge:
   - hpa.yaml
 images:
   - name: "arabkin/hello-cloudbuild"
-    newTag: "v1.2.4"
+    newTag: "v1.2.5"
