@@ -3,6 +3,6 @@ kind: HorizontalPodAutoscaler
 metadata:
   name: hello-cloudbuild
 spec:
-  minReplicas: 4
-  maxReplicas: 6
+  minReplicas: 3
+  maxReplicas: 3
   #targetCPUUtilizationPercentage: 20
