@@ -13,36 +13,4 @@ spec:
     server: "https://kubernetes.default.svc"
     namespace: default
   syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
----
-apiVersion: argoproj.io/v1alpha1
-kind: AppProject
-metadata:
-  name: thalia
-  namespace: argocd
-spec:
-  description: Thalia Project - History
-  destinations:
-    - namespace: prod
-      server: https://kubernetes.default.svc
-    - namespace: dev
-      server: https://kubernetes.default.svc
-  sourceRepos:
-    - git@github.com:tikalk/argocd-demo.git
----
-apiVersion: argoproj.io/v1alpha1
-kind: AppProject
-metadata:
-  name: clio
-  namespace: argocd
-spec:
-  description: Clio Project - Music and Poetry
-  destinations:
-    - namespace: stage
-      server: https://kubernetes.default.svc
-    - namespace: dev
-      server: https://kubernetes.default.svc
-  sourceRepos:
-    - git@github.com:tikalk/argocd-demo.git
+    automated: {}

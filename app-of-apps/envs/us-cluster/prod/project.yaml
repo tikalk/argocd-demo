@@ -7,6 +7,6 @@ spec:
   description: Staging Environments
   destinations:
     - namespace: staging
-      server: https://34.73.77.97
+      server: https://xx.xx.xx.xx
   sourceRepos:
-    - git@github.com:khealth/infra.git
+    - git@github.com:tikalk/argocd-demo.git"
