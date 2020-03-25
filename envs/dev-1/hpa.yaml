@@ -4,5 +4,5 @@ metadata:
   name: hello-cloudbuild
 spec:
   minReplicas: 3
-  maxReplicas: 6
+  maxReplicas: 3
   #targetCPUUtilizationPercentage: 20
